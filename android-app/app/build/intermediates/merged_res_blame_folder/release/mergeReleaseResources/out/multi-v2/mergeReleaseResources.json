@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "dev.pulseboost.pro.app-release-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/user/sandbox/android-app/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "606"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "741",
+                        "endLines": "24",
+                        "endColumns": "12",
+                        "endOffsets": "1292"
+                    }
+                },
+                {
+                    "source": "/home/user/sandbox/android-app/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "7,2,8,6,3,9,4,5",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "265,55,309,224,95,351,138,182",
+                        "endColumns": "43,39,41,40,42,40,43,41",
+                        "endOffsets": "304,90,346,260,133,387,177,219"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,99,139,181,222,265,306,350",
+                        "endColumns": "43,39,41,40,42,40,43,41",
+                        "endOffsets": "94,134,176,217,260,301,345,387"
+                    }
+                },
+                {
+                    "source": "/home/user/sandbox/android-app/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,3,4,7,6,5",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,107,164,346,299,235",
+                        "endColumns": "51,56,70,57,46,63",
+                        "endOffsets": "102,159,230,399,341,294"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "392,444,501,572,630,677",
+                        "endColumns": "51,56,70,57,46,63",
+                        "endOffsets": "439,496,567,625,672,736"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,152 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dev.pulseboost.pro"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Overlay window for the FPS meter -->
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:6:5-78
+12-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:6:22-75
+13    <!-- Foreground services (overlay + launch monitor) -->
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:8:5-77
+14-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:8:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+15-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:9:5-89
+15-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:9:22-86
+16    <!-- Status notifications for the foreground services -->
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:11:5-77
+17-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:11:22-74
+18    <!-- Needed to enumerate installed launcher apps on Android 11+ -->
+19    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+19-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:13:5-77
+19-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:13:22-74
+20    <!-- UsageStats-based foreground app detection for per-app boost profiles -->
+21    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+21-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:15:5-17:47
+21-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:16:9-62
+22    <!-- Allow user to exempt the monitor service from Doze -->
+23    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+23-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:19:5-95
+23-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:19:22-92
+24    <!-- Declared for Settings writes the user may grant via ADB/Shizuku -->
+25    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+25-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:21:5-23:47
+25-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:22:9-57
+26    <!-- Shizuku API permission -->
+27    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+27-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:25:5-78
+27-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:25:22-75
+28
+29    <application
+29-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:27:5-78:19
+30        android:allowBackup="false"
+30-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:31:9-36
+31        android:extractNativeLibs="false"
+32        android:icon="@drawable/ic_launcher"
+32-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:29:9-45
+33        android:label="@string/app_name"
+33-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:28:9-41
+34        android:supportsRtl="true"
+34-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:32:9-35
+35        android:theme="@style/Theme.PulseBoost" >
+35-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:30:9-48
+36        <activity
+36-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:34:9-42:20
+37            android:name="dev.pulseboost.pro.MainActivity"
+37-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:35:13-41
+38            android:exported="true"
+38-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:36:13-36
+39            android:launchMode="singleTask" >
+39-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:37:13-44
+40            <intent-filter>
+40-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:38:13-41:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:39:17-69
+41-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:39:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:40:17-77
+43-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:40:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <!-- FPS overlay: real Choreographer measurements over any app -->
+48        <service
+48-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:45:9-52:19
+49            android:name="dev.pulseboost.pro.BoostOverlayService"
+49-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:46:13-48
+50            android:exported="false"
+50-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:47:13-37
+51            android:foregroundServiceType="specialUse" >
+51-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:48:13-55
+52            <property
+52-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:49:13-51:128
+53                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+53-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:50:17-76
+54                android:value="Draws a real-time FPS / foreground-package overlay measured with Choreographer while gaming." />
+54-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:51:17-125
+55        </service>
+56
+57        <!-- Watches UsageStats and fires per-app boost profiles -->
+58        <service
+58-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:55:9-62:19
+59            android:name="dev.pulseboost.pro.BoostMonitorService"
+59-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:56:13-48
+60            android:exported="false"
+60-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:57:13-37
+61            android:foregroundServiceType="specialUse" >
+61-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:58:13-55
+62            <property
+62-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:49:13-51:128
+63                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+63-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:50:17-76
+64                android:value="Detects when a profile-enabled game enters the foreground and runs the user&apos;s Shizuku boost actions." />
+64-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:51:17-125
+65        </service>
+66
+67        <!-- Home screen widget: live free RAM + one-tap boost -->
+68        <receiver
+68-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:65:9-77:20
+69            android:name="dev.pulseboost.pro.BoostWidgetProvider"
+69-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:66:13-48
+70            android:exported="false"
+70-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:67:13-37
+71            android:label="@string/widget_label" >
+71-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:68:13-49
+72            <intent-filter>
+72-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:69:13-73:29
+73                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+73-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:70:17-84
+73-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:70:25-81
+74                <action android:name="dev.pulseboost.pro.widget.REFRESH" />
+74-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:71:17-76
+74-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:71:25-73
+75                <action android:name="dev.pulseboost.pro.widget.BOOST" />
+75-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:72:17-74
+75-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:72:25-71
+76            </intent-filter>
+77
+78            <meta-data
+78-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:74:13-76:61
+79                android:name="android.appwidget.provider"
+79-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:75:17-58
+80                android:resource="@xml/boost_widget_info" />
+80-->/home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:76:17-58
+81        </receiver>
+82
+83        <meta-data
+83-->[dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:11:9-13:36
+84            android:name="moe.shizuku.client.V3_SUPPORT"
+84-->[dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:12:13-57
+85            android:value="true" />
+85-->[dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:13:13-33
+86    </application>
+87
+88</manifest>

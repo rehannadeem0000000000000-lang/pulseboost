@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.2" type="incidents">
+
+    <incident
+        id="BlockedPrivateApi"
+        severity="fatal"
+        message="Reflective access to setGameMode is forbidden when targeting API 34 and above">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/dev/pulseboost/pro/GameModeHelper.kt"
+            line="89"
+            column="26"
+            startOffset="3386"
+            endLine="91"
+            endColumn="14"
+            endOffset="3523"/>
+    </incident>
+
+</incidents>

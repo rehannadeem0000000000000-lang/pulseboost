@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/drawable_ic_launcher.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/layout_widget_boost.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/layout/widget_boost.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/xml_boost_widget_info.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/xml/boost_widget_info.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/drawable_ic_close.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/layout_activity_main.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/drawable_overlay_bg.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/drawable/overlay_bg.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/drawable_ic_stat.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/drawable/ic_stat.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/layout_overlay_fps.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/layout/overlay_fps.xml"
+    },
+    {
+        "merged": "dev.pulseboost.pro.app-release-5:/drawable_widget_bg.xml.flat",
+        "source": "dev.pulseboost.pro.app-main-6:/drawable/widget_bg.xml"
+    }
+]

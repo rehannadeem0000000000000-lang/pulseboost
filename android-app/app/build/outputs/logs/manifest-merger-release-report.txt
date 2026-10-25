@@ -1,0 +1,171 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:2:1-80:12
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:2:1-80:12
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:2:1-16:12
+MERGED from [dev.rikka.shizuku:api:13.1.5] /home/user/.gradle/caches/8.9/transforms/a334694976e14554b70a09a656c8316c/transformed/api-13.1.5/AndroidManifest.xml:2:1-7:12
+MERGED from [dev.rikka.shizuku:shared:13.1.5] /home/user/.gradle/caches/8.9/transforms/72321ceec2ff2747a6c1b0c7b6156d23/transformed/shared-13.1.5/AndroidManifest.xml:2:1-7:12
+MERGED from [dev.rikka.shizuku:aidl:13.1.5] /home/user/.gradle/caches/8.9/transforms/d2d2315f34bd407bfcc2143a6de6bbe7/transformed/aidl-13.1.5/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:6:22-75
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:8:5-77
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:8:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:9:5-89
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:9:22-86
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:11:5-77
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:11:22-74
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:13:22-74
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:15:5-17:47
+	tools:ignore
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:17:9-44
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:16:9-62
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:19:5-95
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:19:22-92
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:21:5-23:47
+	tools:ignore
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:23:9-44
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:22:9-57
+uses-permission#moe.shizuku.manager.permission.API_V23
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:25:5-78
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:8:5-78
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:25:22-75
+application
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:27:5-78:19
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:27:5-78:19
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:10:5-14:19
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:10:5-14:19
+	android:extractNativeLibs
+		INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+	android:supportsRtl
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:32:9-35
+	android:label
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:28:9-41
+	tools:ignore
+		ADDED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:10:18-69
+	android:icon
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:29:9-45
+	android:allowBackup
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:31:9-36
+	android:theme
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:30:9-48
+activity#dev.pulseboost.pro.MainActivity
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:34:9-42:20
+	android:launchMode
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:37:13-44
+	android:exported
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:36:13-36
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:35:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:38:13-41:29
+action#android.intent.action.MAIN
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:40:27-74
+service#dev.pulseboost.pro.BoostOverlayService
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:45:9-52:19
+	android:exported
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:47:13-37
+	android:foregroundServiceType
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:48:13-55
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:46:13-48
+property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:49:13-51:128
+	android:value
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:51:17-125
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:50:17-76
+service#dev.pulseboost.pro.BoostMonitorService
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:55:9-62:19
+	android:exported
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:57:13-37
+	android:foregroundServiceType
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:58:13-55
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:56:13-48
+receiver#dev.pulseboost.pro.BoostWidgetProvider
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:65:9-77:20
+	android:label
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:68:13-49
+	android:exported
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:67:13-37
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:66:13-48
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE+action:name:dev.pulseboost.pro.widget.BOOST+action:name:dev.pulseboost.pro.widget.REFRESH
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:69:13-73:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:70:17-84
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:70:25-81
+action#dev.pulseboost.pro.widget.REFRESH
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:71:17-76
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:71:25-73
+action#dev.pulseboost.pro.widget.BOOST
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:72:17-74
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:72:25-71
+meta-data#android.appwidget.provider
+ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:74:13-76:61
+	android:resource
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:76:17-58
+	android:name
+		ADDED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml:75:17-58
+uses-sdk
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:6:5-44
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:6:5-44
+MERGED from [dev.rikka.shizuku:api:13.1.5] /home/user/.gradle/caches/8.9/transforms/a334694976e14554b70a09a656c8316c/transformed/api-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:api:13.1.5] /home/user/.gradle/caches/8.9/transforms/a334694976e14554b70a09a656c8316c/transformed/api-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:shared:13.1.5] /home/user/.gradle/caches/8.9/transforms/72321ceec2ff2747a6c1b0c7b6156d23/transformed/shared-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:shared:13.1.5] /home/user/.gradle/caches/8.9/transforms/72321ceec2ff2747a6c1b0c7b6156d23/transformed/shared-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:aidl:13.1.5] /home/user/.gradle/caches/8.9/transforms/d2d2315f34bd407bfcc2143a6de6bbe7/transformed/aidl-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:aidl:13.1.5] /home/user/.gradle/caches/8.9/transforms/d2d2315f34bd407bfcc2143a6de6bbe7/transformed/aidl-13.1.5/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/user/sandbox/android-app/app/src/main/AndroidManifest.xml
+meta-data#moe.shizuku.client.V3_SUPPORT
+ADDED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:11:9-13:36
+	android:value
+		ADDED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:13:13-33
+	android:name
+		ADDED from [dev.rikka.shizuku:provider:13.1.5] /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/AndroidManifest.xml:12:13-57

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pb_accent">#C8FF2E</color>
+    <color name="pb_bg">#07090E</color>
+    <color name="pb_cyan">#3EE7FF</color>
+    <color name="pb_dim">#78849E</color>
+    <color name="pb_panel">#0D1015</color>
+    <color name="pb_red">#FF546E</color>
+    <color name="pb_stroke">#262E42</color>
+    <color name="pb_text">#E8F0FF</color>
+    <string name="app_name">PulseBoost Pro</string>
+    <string name="app_name_caps">PULSEBOOST PRO</string>
+    <string name="app_tagline">shizuku-powered system booster</string>
+    <string name="close_overlay">Dismiss overlay</string>
+    <string name="widget_boost">BOOST</string>
+    <string name="widget_label">PulseBoost RAM + Boost</string>
+    <style name="Theme.PulseBoost" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/pb_bg</item>
+        <item name="android:statusBarColor">@color/pb_bg</item>
+        <item name="android:navigationBarColor">@color/pb_bg</item>
+        <item name="android:colorAccent">@color/pb_accent</item>
+        <item name="android:textColorPrimary">@color/pb_text</item>
+        <item name="android:textColorSecondary">@color/pb_dim</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

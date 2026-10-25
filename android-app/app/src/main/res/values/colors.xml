@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pb_bg">#07090E</color>
+    <color name="pb_panel">#0D1015</color>
+    <color name="pb_stroke">#262E42</color>
+    <color name="pb_text">#E8F0FF</color>
+    <color name="pb_dim">#78849E</color>
+    <color name="pb_accent">#C8FF2E</color>
+    <color name="pb_cyan">#3EE7FF</color>
+    <color name="pb_red">#FF546E</color>
+</resources>

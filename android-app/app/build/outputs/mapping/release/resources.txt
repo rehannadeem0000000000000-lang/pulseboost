@@ -1,0 +1,113 @@
+Marking drawable:ic_stat:2130837506 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking layout:overlay_fps:2130968577 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:fps_value:2130903042 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:fps_pkg:2130903041 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:overlay_close:2130903046 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:overlay_root:2130903047 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking layout:activity_main:2130968576 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:shizuku_pill:2130903049 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:ram_pill:2130903048 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:content_frame:2130903040 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tab_bar:2130903050 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking layout:widget_boost:2130968578 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:widget_ram:2130903053 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:widget_hint:2130903052 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:widget_boost_button:2130903051 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:widget_title:2130903055 reachable: referenced from /home/user/sandbox/android-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+@color/pb_accent : reachable=false
+@color/pb_bg : reachable=false
+@color/pb_cyan : reachable=false
+@color/pb_dim : reachable=false
+@color/pb_panel : reachable=false
+@color/pb_red : reachable=false
+@color/pb_stroke : reachable=false
+@color/pb_text : reachable=false
+@drawable/ic_close : reachable=false
+@drawable/ic_launcher : reachable=true
+@drawable/ic_stat : reachable=true
+@drawable/overlay_bg : reachable=false
+@drawable/widget_bg : reachable=false
+@id/content_frame : reachable=true
+@id/fps_pkg : reachable=true
+@id/fps_value : reachable=true
+@id/header : reachable=false
+@id/header_sub : reachable=false
+@id/header_title : reachable=false
+@id/overlay_close : reachable=true
+@id/overlay_root : reachable=true
+@id/ram_pill : reachable=true
+@id/shizuku_pill : reachable=true
+@id/tab_bar : reachable=true
+@id/widget_boost_button : reachable=true
+@id/widget_hint : reachable=true
+@id/widget_ram : reachable=true
+@id/widget_root : reachable=false
+@id/widget_title : reachable=true
+@layout/activity_main : reachable=true
+    @color/pb_bg
+    @color/pb_text
+    @string/app_name_caps
+    @color/pb_dim
+    @string/app_tagline
+    @color/pb_accent
+@layout/overlay_fps : reachable=true
+    @drawable/overlay_bg
+    @color/pb_accent
+    @color/pb_dim
+    @drawable/ic_close
+    @string/close_overlay
+@layout/widget_boost : reachable=true
+    @drawable/widget_bg
+    @color/pb_dim
+    @string/app_name_caps
+    @color/pb_text
+    @color/pb_accent
+    @color/pb_bg
+    @string/widget_boost
+@string/app_name : reachable=true
+@string/app_name_caps : reachable=false
+@string/app_tagline : reachable=false
+@string/close_overlay : reachable=false
+@string/widget_boost : reachable=false
+@string/widget_label : reachable=true
+@style/Theme_PulseBoost : reachable=true
+    @color/pb_bg
+    @color/pb_text
+    @color/pb_dim
+    @color/pb_accent
+@xml/boost_widget_info : reachable=true
+    @layout/widget_boost
+    @string/widget_label
+
+The root reachable resources are:
+ drawable:ic_launcher:2130837505
+ drawable:ic_stat:2130837506
+ id:content_frame:2130903040
+ id:fps_pkg:2130903041
+ id:fps_value:2130903042
+ id:overlay_close:2130903046
+ id:overlay_root:2130903047
+ id:ram_pill:2130903048
+ id:shizuku_pill:2130903049
+ id:tab_bar:2130903050
+ id:widget_boost_button:2130903051
+ id:widget_hint:2130903052
+ id:widget_ram:2130903053
+ id:widget_title:2130903055
+ layout:activity_main:2130968576
+ layout:overlay_fps:2130968577
+ layout:widget_boost:2130968578
+ string:app_name:2131034112
+ string:widget_label:2131034117
+ style:Theme_PulseBoost:2131099648
+ xml:boost_widget_info:2131165184
+Unused resources are: 
+ color:pb_cyan:2130771970
+ color:pb_panel:2130771972
+ color:pb_red:2130771973
+ color:pb_stroke:2130771974
+ id:header:2130903043
+ id:header_sub:2130903044
+ id:header_title:2130903045
+ id:widget_root:2130903054
+Resource shrinking did not work (grew from 9717 to 9881); using original instead

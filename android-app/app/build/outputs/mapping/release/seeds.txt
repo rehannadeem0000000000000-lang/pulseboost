@@ -1,0 +1,438 @@
+androidx.annotation.IdRes
+androidx.annotation.StyleableRes
+androidx.annotation.IntRange
+rikka.shizuku.Shizuku$UserServiceArgs
+rikka.shizuku.aidl.R
+androidx.annotation.Size
+dev.pulseboost.pro.BoostMonitorService
+androidx.annotation.RequiresPermission$Read
+androidx.annotation.Keep
+rikka.shizuku.ShizukuRemoteProcess
+rikka.shizuku.ShizukuServiceConnections
+androidx.annotation.HalfFloat
+androidx.annotation.LayoutRes
+rikka.shizuku.shared.R
+androidx.annotation.RequiresApi
+androidx.annotation.CheckResult
+androidx.annotation.DrawableRes
+androidx.annotation.NavigationRes
+androidx.annotation.AnyThread
+androidx.annotation.WorkerThread
+androidx.annotation.StyleRes
+rikka.shizuku.ShizukuApiConstants
+androidx.annotation.FractionRes
+moe.shizuku.api.BinderContainer
+androidx.annotation.RestrictTo$Scope
+androidx.annotation.FloatRange
+androidx.annotation.Nullable
+rikka.shizuku.ShizukuRemoteProcess$1
+rikka.shizuku.provider.R
+androidx.annotation.MenuRes
+rikka.shizuku.Shizuku$ListenerHolder
+androidx.annotation.AnimatorRes
+androidx.annotation.RawRes
+androidx.annotation.GuardedBy
+androidx.annotation.InterpolatorRes
+rikka.shizuku.ShizukuProvider
+androidx.annotation.IntDef
+androidx.annotation.BoolRes
+rikka.shizuku.SystemServiceHelper
+androidx.annotation.Px
+androidx.annotation.InspectableProperty$FlagEntry
+androidx.annotation.DisplayContext
+rikka.shizuku.Shizuku$OnBinderReceivedListener
+rikka.shizuku.Shizuku$OnRequestPermissionResultListener
+androidx.annotation.AnimRes
+androidx.annotation.RequiresPermission
+androidx.annotation.IntegerRes
+androidx.annotation.ColorRes
+androidx.annotation.ChecksSdkIntAtLeast
+androidx.annotation.ArrayRes
+androidx.annotation.StringRes
+androidx.annotation.DoNotInline
+rikka.shizuku.ShizukuSystemProperties
+androidx.annotation.DimenRes
+dev.pulseboost.pro.BoostOverlayService
+androidx.annotation.PluralsRes
+dev.pulseboost.pro.BoostWidgetProvider
+androidx.annotation.ContentView
+androidx.annotation.ColorLong
+rikka.shizuku.ShizukuBinderWrapper
+androidx.annotation.RequiresFeature
+androidx.annotation.LongDef
+androidx.annotation.AnyRes
+androidx.annotation.StringDef
+androidx.annotation.NonUiContext
+rikka.shizuku.Shizuku$OnBinderDeadListener
+rikka.shizuku.Shizuku
+androidx.annotation.CallSuper
+androidx.annotation.BinderThread
+androidx.annotation.MainThread
+androidx.annotation.Discouraged
+rikka.shizuku.Shizuku$1
+androidx.annotation.UiThread
+androidx.annotation.GravityInt
+dev.pulseboost.pro.BuildConfig
+rikka.shizuku.ShizukuServiceConnection
+androidx.annotation.ColorInt
+rikka.shizuku.ShizukuProvider$1
+androidx.annotation.InspectableProperty$EnumEntry
+androidx.annotation.UiContext
+androidx.annotation.Dimension
+androidx.annotation.NonNull
+androidx.annotation.InspectableProperty$ValueType
+dev.pulseboost.pro.MainActivity
+rikka.shizuku.api.R
+androidx.annotation.TransitionRes
+androidx.annotation.InspectableProperty
+rikka.shizuku.shared.BuildConfig
+androidx.annotation.RequiresPermission$Write
+androidx.annotation.RestrictTo
+androidx.annotation.FontRes
+androidx.annotation.XmlRes
+androidx.annotation.VisibleForTesting
+androidx.annotation.AttrRes
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_DAEMON
+rikka.shizuku.Shizuku$UserServiceArgs: java.lang.String processName
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType[] $VALUES
+dev.pulseboost.pro.BuildConfig: java.lang.String VERSION_NAME
+rikka.shizuku.Shizuku: android.os.IBinder$DeathRecipient DEATH_RECIPIENT
+dev.pulseboost.pro.BuildConfig: int VERSION_CODE
+rikka.shizuku.shared.BuildConfig: boolean DEBUG
+rikka.shizuku.Shizuku: int serverPatchVersion
+moe.shizuku.api.BinderContainer: android.os.Parcelable$Creator CREATOR
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope LIBRARY_GROUP
+androidx.annotation.VisibleForTesting: int PACKAGE_PRIVATE
+rikka.shizuku.ShizukuApiConstants: java.lang.String BIND_APPLICATION_SERVER_SECONTEXT
+moe.shizuku.server.IShizukuServiceConnection$Stub: int TRANSACTION_died
+rikka.shizuku.SystemServiceHelper: java.util.Map TRANSACT_CODE_CACHE
+moe.shizuku.server.IShizukuServiceConnection$Stub: java.lang.String DESCRIPTOR
+rikka.shizuku.ShizukuApiConstants: java.lang.String BIND_APPLICATION_PERMISSION_GRANTED
+rikka.shizuku.SystemServiceHelper: java.util.Map SYSTEM_SERVICE_CACHE
+rikka.shizuku.Shizuku: boolean permissionGranted
+rikka.shizuku.Shizuku$UserServiceArgs: java.lang.String tag
+androidx.annotation.Dimension: int DP
+rikka.shizuku.Shizuku: android.os.IBinder binder
+rikka.shizuku.ShizukuApiConstants: java.lang.String BIND_APPLICATION_SHOULD_SHOW_REQUEST_PERMISSION_RATIONALE
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_REMOVE
+rikka.shizuku.shared.BuildConfig: java.lang.String BUILD_TYPE
+rikka.shizuku.ShizukuApiConstants: java.lang.String ATTACH_APPLICATION_API_VERSION
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_PROCESS_NAME
+rikka.shizuku.ShizukuRemoteProcess: java.util.Set CACHE
+rikka.shizuku.Shizuku: boolean binderReady
+rikka.shizuku.Shizuku$UserServiceArgs: boolean use32BitAppProcess
+rikka.shizuku.ShizukuApiConstants: java.lang.String REQUEST_PERMISSION_REPLY_ALLOWED
+rikka.shizuku.ShizukuApiConstants: java.lang.String BINDER_DESCRIPTOR
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope[] $VALUES
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType RESOURCE_ID
+rikka.shizuku.ShizukuServiceConnection: android.os.IBinder binder
+moe.shizuku.server.IShizukuApplication$Stub: int TRANSACTION_dispatchRequestPermissionResult
+moe.shizuku.server.IShizukuApplication$Stub: int TRANSACTION_showPermissionConfirmation
+rikka.shizuku.Shizuku: android.os.Handler MAIN_HANDLER
+rikka.shizuku.ShizukuApiConstants: java.lang.String ATTACH_APPLICATION_PACKAGE_NAME
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType GRAVITY
+rikka.shizuku.ShizukuApiConstants: java.lang.String BIND_APPLICATION_SERVER_PATCH_VERSION
+rikka.shizuku.ShizukuProvider: java.lang.String ACTION_BINDER_RECEIVED
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope LIBRARY_GROUP_PREFIX
+moe.shizuku.server.IShizukuApplication$Stub: java.lang.String DESCRIPTOR
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope GROUP_ID
+dev.pulseboost.pro.BuildConfig: java.lang.String BUILD_TYPE
+rikka.shizuku.ShizukuServiceConnection: android.content.ComponentName componentName
+rikka.shizuku.ShizukuProvider: boolean enableMultiProcess
+androidx.annotation.VisibleForTesting: int NONE
+rikka.shizuku.Shizuku$ListenerHolder: java.lang.Object listener
+rikka.shizuku.Shizuku: int serverUid
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType INT_FLAG
+rikka.shizuku.ShizukuRemoteProcess: moe.shizuku.server.IRemoteProcess remote
+rikka.shizuku.shared.BuildConfig: java.lang.String LIBRARY_PACKAGE_NAME
+rikka.shizuku.ShizukuApiConstants: int SERVER_VERSION
+rikka.shizuku.ShizukuServiceConnection: android.os.Handler MAIN_HANDLER
+rikka.shizuku.Shizuku$UserServiceArgs: int versionCode
+rikka.shizuku.ShizukuRemoteProcess: java.lang.String TAG
+dev.pulseboost.pro.BuildConfig: java.lang.String APPLICATION_ID
+rikka.shizuku.Shizuku$UserServiceArgs: boolean debuggable
+rikka.shizuku.SystemServiceHelper: java.lang.reflect.Method getService
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_DEBUGGABLE
+androidx.annotation.Dimension: int PX
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_TAG
+rikka.shizuku.ShizukuProvider: boolean enableSuiInitialization
+rikka.shizuku.ShizukuServiceConnection: boolean dead
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope SUBCLASSES
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_VERSION_CODE
+rikka.shizuku.ShizukuApiConstants: int SERVER_PATCH_VERSION
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_COMPONENT
+rikka.shizuku.ShizukuProvider: java.lang.String MANAGER_APPLICATION_ID
+rikka.shizuku.Shizuku: java.util.List PERMISSION_LISTENERS
+rikka.shizuku.ShizukuApiConstants: java.lang.String BIND_APPLICATION_SERVER_VERSION
+rikka.shizuku.ShizukuRemoteProcess: java.io.OutputStream os
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType INFERRED
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_USE_32_BIT_APP_PROCESS
+rikka.shizuku.ShizukuProvider: boolean isProviderProcess
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType COLOR
+rikka.shizuku.Shizuku: java.util.List RECEIVED_LISTENERS
+androidx.annotation.VisibleForTesting: int PRIVATE
+rikka.shizuku.ShizukuApiConstants: java.lang.String BIND_APPLICATION_SERVER_UID
+rikka.shizuku.ShizukuBinderWrapper: android.os.IBinder original
+rikka.shizuku.Shizuku$UserServiceArgs: android.content.ComponentName componentName
+rikka.shizuku.Shizuku$UserServiceArgs: boolean daemon
+rikka.shizuku.ShizukuProvider: java.lang.String PERMISSION
+rikka.shizuku.Shizuku: moe.shizuku.server.IShizukuApplication SHIZUKU_APPLICATION
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_NO_CREATE
+rikka.shizuku.ShizukuApiConstants: java.lang.String USER_SERVICE_ARG_TOKEN
+androidx.annotation.Dimension: int SP
+rikka.shizuku.ShizukuApiConstants: java.lang.String REQUEST_PERMISSION_REPLY_IS_ONETIME
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope LIBRARY
+rikka.shizuku.ShizukuServiceConnection: java.util.Set connections
+rikka.shizuku.Shizuku: int serverApiVersion
+rikka.shizuku.Shizuku$ListenerHolder: android.os.Handler handler
+rikka.shizuku.Shizuku: boolean shouldShowRequestPermissionRationale
+rikka.shizuku.Shizuku: moe.shizuku.server.IShizukuService service
+rikka.shizuku.ShizukuApiConstants: int USER_SERVICE_TRANSACTION_destroy
+androidx.annotation.VisibleForTesting: int PROTECTED
+rikka.shizuku.Shizuku: java.util.List DEAD_LISTENERS
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType INT_ENUM
+rikka.shizuku.ShizukuProvider: java.lang.String METHOD_GET_BINDER
+rikka.shizuku.ShizukuProvider: java.lang.String METHOD_SEND_BINDER
+rikka.shizuku.ShizukuApiConstants: int BINDER_TRANSACTION_transact
+dev.pulseboost.pro.BuildConfig: boolean DEBUG
+rikka.shizuku.Shizuku: boolean preV11
+rikka.shizuku.ShizukuServiceConnections: java.util.Map CACHE
+moe.shizuku.server.IShizukuServiceConnection$Stub: int TRANSACTION_connected
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope TESTS
+rikka.shizuku.ShizukuProvider: java.lang.String TAG
+moe.shizuku.server.IShizukuApplication$Stub: int TRANSACTION_bindApplication
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType NONE
+rikka.shizuku.ShizukuProvider: java.lang.String EXTRA_BINDER
+rikka.shizuku.Shizuku: java.lang.String serverContext
+rikka.shizuku.ShizukuRemoteProcess: android.os.Parcelable$Creator CREATOR
+rikka.shizuku.ShizukuRemoteProcess: java.io.InputStream is
+rikka.shizuku.Shizuku$UserServiceArgs: rikka.shizuku.Shizuku$UserServiceArgs daemon(boolean)
+rikka.shizuku.Shizuku$1: void dispatchRequestPermissionResult(int,android.os.Bundle)
+rikka.shizuku.Shizuku: int access$202(int)
+rikka.shizuku.Shizuku$UserServiceArgs: android.os.Bundle forAdd()
+rikka.shizuku.Shizuku: void attachUserService(android.os.IBinder,android.os.Bundle)
+androidx.annotation.InspectableProperty$ValueType: InspectableProperty$ValueType(java.lang.String,int)
+androidx.annotation.IntDef: boolean open()
+rikka.shizuku.Shizuku: void access$700(int,int)
+rikka.shizuku.Shizuku: android.os.IBinder getBinder()
+androidx.annotation.InspectableProperty$FlagEntry: int mask()
+androidx.annotation.RequiresPermission$Write: androidx.annotation.RequiresPermission value()
+rikka.shizuku.ShizukuServiceConnection: void addConnection(android.content.ServiceConnection)
+rikka.shizuku.Shizuku$UserServiceArgs: android.os.Bundle forRemove(boolean)
+rikka.shizuku.Shizuku$OnBinderReceivedListener: void onBinderReceived()
+rikka.shizuku.ShizukuServiceConnections: void remove(rikka.shizuku.ShizukuServiceConnection)
+rikka.shizuku.Shizuku: void addBinderReceivedListenerSticky(rikka.shizuku.Shizuku$OnBinderReceivedListener)
+moe.shizuku.server.IShizukuServiceConnection$Stub: boolean setDefaultImpl(moe.shizuku.server.IShizukuServiceConnection)
+androidx.annotation.LongDef: long[] value()
+androidx.annotation.LongDef: boolean open()
+rikka.shizuku.ShizukuBinderWrapper: java.lang.String getInterfaceDescriptor()
+androidx.annotation.StringDef: boolean open()
+rikka.shizuku.Shizuku: int access$002(int)
+rikka.shizuku.ShizukuRemoteProcess: int describeContents()
+rikka.shizuku.Shizuku: rikka.shizuku.ShizukuRemoteProcess newProcess(java.lang.String[],java.lang.String[],java.lang.String)
+rikka.shizuku.Shizuku: void lambda$scheduleRequestPermissionResultListener$4(rikka.shizuku.Shizuku$ListenerHolder,int,int)
+rikka.shizuku.Shizuku: void lambda$static$0()
+androidx.annotation.CheckResult: java.lang.String suggest()
+rikka.shizuku.Shizuku$ListenerHolder: int hashCode()
+rikka.shizuku.api.R: R()
+rikka.shizuku.ShizukuRemoteProcess: java.io.InputStream getInputStream()
+dev.pulseboost.pro.MainActivity$Section: dev.pulseboost.pro.MainActivity$Section[] values()
+rikka.shizuku.Shizuku$UserServiceArgs: rikka.shizuku.Shizuku$UserServiceArgs processNameSuffix(java.lang.String)
+rikka.shizuku.Shizuku: void scheduleBinderReceivedListeners()
+rikka.shizuku.ShizukuProvider: void disableAutomaticSuiInitialization()
+rikka.shizuku.ShizukuProvider: boolean handleGetBinder(android.os.Bundle)
+rikka.shizuku.ShizukuRemoteProcess$1: java.lang.Object[] newArray(int)
+androidx.annotation.InspectableProperty$FlagEntry: java.lang.String name()
+kotlin.collections.AbstractList: AbstractList()
+androidx.annotation.Size: long min()
+rikka.shizuku.Shizuku$1: void bindApplication(android.os.Bundle)
+rikka.shizuku.ShizukuSystemProperties: java.lang.String get(java.lang.String,java.lang.String)
+androidx.annotation.InspectableProperty: androidx.annotation.InspectableProperty$FlagEntry[] flagMapping()
+rikka.shizuku.Shizuku: boolean access$502(boolean)
+rikka.shizuku.ShizukuBinderWrapper: void linkToDeath(android.os.IBinder$DeathRecipient,int)
+rikka.shizuku.SystemServiceHelper: android.os.IBinder getSystemService(java.lang.String)
+rikka.shizuku.ShizukuRemoteProcess: android.os.IBinder asBinder()
+moe.shizuku.server.IShizukuApplication$Stub: boolean setDefaultImpl(moe.shizuku.server.IShizukuApplication)
+rikka.shizuku.SystemServiceHelper: android.os.Parcel obtainParcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+moe.shizuku.server.IShizukuApplication$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+rikka.shizuku.Shizuku: int checkSelfPermission()
+androidx.annotation.InspectableProperty: androidx.annotation.InspectableProperty$ValueType valueType()
+rikka.shizuku.ShizukuSystemProperties: long getLong(java.lang.String,long)
+rikka.shizuku.ShizukuRemoteProcess: ShizukuRemoteProcess(android.os.Parcel)
+rikka.shizuku.Shizuku: int access$102(int)
+androidx.annotation.LongDef: boolean flag()
+rikka.shizuku.ShizukuProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+rikka.shizuku.Shizuku: int getServerPatchVersion()
+rikka.shizuku.Shizuku$UserServiceArgs: Shizuku$UserServiceArgs(android.content.ComponentName)
+rikka.shizuku.ShizukuRemoteProcess: boolean alive()
+rikka.shizuku.provider.R: R()
+rikka.shizuku.ShizukuRemoteProcess: ShizukuRemoteProcess(moe.shizuku.server.IRemoteProcess)
+rikka.shizuku.Shizuku$ListenerHolder: Shizuku$ListenerHolder(java.lang.Object,android.os.Handler)
+rikka.shizuku.Shizuku: void addBinderDeadListener(rikka.shizuku.Shizuku$OnBinderDeadListener,android.os.Handler)
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope valueOf(java.lang.String)
+rikka.shizuku.ShizukuRemoteProcess$1: rikka.shizuku.ShizukuRemoteProcess[] newArray(int)
+rikka.shizuku.Shizuku: void addRequestPermissionResultListener(rikka.shizuku.Shizuku$OnRequestPermissionResultListener)
+rikka.shizuku.Shizuku$1: void showPermissionConfirmation(int,int,java.lang.String,int)
+moe.shizuku.server.IShizukuServiceConnection$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+androidx.annotation.Size: long value()
+androidx.annotation.RequiresPermission: java.lang.String[] allOf()
+rikka.shizuku.ShizukuBinderWrapper: android.os.IInterface queryLocalInterface(java.lang.String)
+rikka.shizuku.Shizuku: int getVersion()
+rikka.shizuku.ShizukuRemoteProcess: java.io.InputStream getErrorStream()
+rikka.shizuku.Shizuku: boolean isPreV11()
+rikka.shizuku.Shizuku$UserServiceArgs: rikka.shizuku.Shizuku$UserServiceArgs tag(java.lang.String)
+rikka.shizuku.ShizukuProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)
+androidx.annotation.Size: long multiple()
+androidx.annotation.FloatRange: boolean fromInclusive()
+rikka.shizuku.Shizuku$ListenerHolder: boolean equals(java.lang.Object)
+androidx.annotation.Discouraged: java.lang.String message()
+rikka.shizuku.Shizuku: boolean removeBinderDeadListener(rikka.shizuku.Shizuku$OnBinderDeadListener)
+androidx.annotation.ChecksSdkIntAtLeast: int lambda()
+rikka.shizuku.SystemServiceHelper: java.lang.Integer getTransactionCode(java.lang.String,java.lang.String)
+rikka.shizuku.Shizuku: void exit()
+rikka.shizuku.Shizuku: void lambda$scheduleRequestPermissionResultListener$5(rikka.shizuku.Shizuku$ListenerHolder,int,int)
+androidx.annotation.InspectableProperty: boolean hasAttributeId()
+dev.pulseboost.pro.BoostWidgetProvider: BoostWidgetProvider()
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType[] values()
+rikka.shizuku.ShizukuServiceConnection: void lambda$connected$0(android.os.IBinder)
+androidx.annotation.RequiresPermission: java.lang.String[] anyOf()
+rikka.shizuku.ShizukuSystemProperties: void set(java.lang.String,java.lang.String)
+rikka.shizuku.Shizuku: void addBinderReceivedListenerSticky(rikka.shizuku.Shizuku$OnBinderReceivedListener,android.os.Handler)
+rikka.shizuku.Shizuku: boolean lambda$removeRequestPermissionResultListener$3(rikka.shizuku.Shizuku$OnRequestPermissionResultListener,rikka.shizuku.Shizuku$ListenerHolder)
+rikka.shizuku.ShizukuBinderWrapper: void dump(java.io.FileDescriptor,java.lang.String[])
+androidx.annotation.ChecksSdkIntAtLeast: int parameter()
+rikka.shizuku.Shizuku: boolean removeRequestPermissionResultListener(rikka.shizuku.Shizuku$OnRequestPermissionResultListener)
+rikka.shizuku.Shizuku: void dispatchPermissionConfirmationResult(int,int,int,android.os.Bundle)
+rikka.shizuku.ShizukuRemoteProcess: void lambda$new$0()
+rikka.shizuku.ShizukuProvider: void attachInfo(android.content.Context,android.content.pm.ProviderInfo)
+rikka.shizuku.Shizuku: int peekUserService(rikka.shizuku.Shizuku$UserServiceArgs,android.content.ServiceConnection)
+rikka.shizuku.Shizuku: void addRequestPermissionResultListener(rikka.shizuku.Shizuku$OnRequestPermissionResultListener,android.os.Handler)
+androidx.annotation.InspectableProperty$ValueType: androidx.annotation.InspectableProperty$ValueType valueOf(java.lang.String)
+androidx.annotation.InspectableProperty$FlagEntry: int target()
+androidx.annotation.IntRange: long to()
+rikka.shizuku.Shizuku$UserServiceArgs: android.os.Bundle access$1100(rikka.shizuku.Shizuku$UserServiceArgs)
+rikka.shizuku.Shizuku: boolean lambda$removeBinderReceivedListener$1(rikka.shizuku.Shizuku$OnBinderReceivedListener,rikka.shizuku.Shizuku$ListenerHolder)
+androidx.annotation.RestrictTo: androidx.annotation.RestrictTo$Scope[] value()
+rikka.shizuku.Shizuku: boolean attachApplicationV11(android.os.IBinder,java.lang.String)
+rikka.shizuku.Shizuku: Shizuku()
+rikka.shizuku.ShizukuServiceConnection: void removeConnection(android.content.ServiceConnection)
+rikka.shizuku.shared.BuildConfig: BuildConfig()
+rikka.shizuku.ShizukuSystemProperties: int getInt(java.lang.String,int)
+rikka.shizuku.ShizukuRemoteProcess$1: rikka.shizuku.ShizukuRemoteProcess createFromParcel(android.os.Parcel)
+moe.shizuku.server.IShizukuApplication$Stub: android.os.IBinder asBinder()
+androidx.annotation.RequiresPermission: boolean conditional()
+rikka.shizuku.Shizuku$UserServiceArgs: rikka.shizuku.Shizuku$UserServiceArgs version(int)
+rikka.shizuku.Shizuku$ListenerHolder: android.os.Handler access$900(rikka.shizuku.Shizuku$ListenerHolder)
+rikka.shizuku.Shizuku: boolean access$402(boolean)
+rikka.shizuku.ShizukuServiceConnection: void lambda$died$1()
+androidx.annotation.RequiresApi: int value()
+androidx.annotation.Dimension: int unit()
+rikka.shizuku.ShizukuServiceConnection: void connected(android.os.IBinder)
+androidx.annotation.InspectableProperty: androidx.annotation.InspectableProperty$EnumEntry[] enumMapping()
+rikka.shizuku.Shizuku: void addBinderDeadListener(rikka.shizuku.Shizuku$OnBinderDeadListener)
+androidx.annotation.RequiresFeature: java.lang.String enforcement()
+androidx.annotation.RequiresPermission: java.lang.String value()
+androidx.annotation.RequiresFeature: java.lang.String name()
+rikka.shizuku.ShizukuBinderWrapper: ShizukuBinderWrapper(android.os.IBinder)
+rikka.shizuku.Shizuku$UserServiceArgs: rikka.shizuku.Shizuku$UserServiceArgs debuggable(boolean)
+rikka.shizuku.ShizukuProvider$1: ShizukuProvider$1()
+rikka.shizuku.Shizuku: int checkRemotePermission(java.lang.String)
+rikka.shizuku.ShizukuProvider: boolean onCreate()
+rikka.shizuku.Shizuku: java.lang.RuntimeException rethrowAsRuntimeException(android.os.RemoteException)
+rikka.shizuku.Shizuku$ListenerHolder: java.lang.Object access$1000(rikka.shizuku.Shizuku$ListenerHolder)
+rikka.shizuku.ShizukuRemoteProcess$1: java.lang.Object createFromParcel(android.os.Parcel)
+rikka.shizuku.ShizukuBinderWrapper: boolean pingBinder()
+rikka.shizuku.ShizukuRemoteProcess: ShizukuRemoteProcess(android.os.Parcel,rikka.shizuku.ShizukuRemoteProcess$1)
+rikka.shizuku.ShizukuBinderWrapper: void dumpAsync(java.io.FileDescriptor,java.lang.String[])
+rikka.shizuku.Shizuku$ListenerHolder: Shizuku$ListenerHolder(java.lang.Object,android.os.Handler,rikka.shizuku.Shizuku$1)
+androidx.annotation.RequiresPermission$Read: androidx.annotation.RequiresPermission value()
+androidx.annotation.InspectableProperty$EnumEntry: int value()
+androidx.annotation.VisibleForTesting: int otherwise()
+androidx.annotation.InspectableProperty: int attributeId()
+androidx.annotation.Size: long max()
+rikka.shizuku.Shizuku: boolean removeBinderReceivedListener(rikka.shizuku.Shizuku$OnBinderReceivedListener)
+rikka.shizuku.ShizukuProvider: void setIsProviderProcess(boolean)
+rikka.shizuku.SystemServiceHelper: android.os.Parcel obtainParcel(java.lang.String,java.lang.String,java.lang.String)
+rikka.shizuku.ShizukuServiceConnection: void died()
+rikka.shizuku.Shizuku: int getFlagsForUid(int,int)
+rikka.shizuku.Shizuku: void bindUserService(rikka.shizuku.Shizuku$UserServiceArgs,android.content.ServiceConnection)
+androidx.annotation.RestrictTo$Scope: androidx.annotation.RestrictTo$Scope[] values()
+rikka.shizuku.ShizukuSystemProperties: java.lang.String get(java.lang.String)
+moe.shizuku.server.IShizukuServiceConnection$Stub: moe.shizuku.server.IShizukuServiceConnection getDefaultImpl()
+rikka.shizuku.Shizuku: void scheduleRequestPermissionResultListener(int,int)
+androidx.annotation.InspectableProperty: java.lang.String name()
+rikka.shizuku.Shizuku$OnRequestPermissionResultListener: void onRequestPermissionResult(int,int)
+rikka.shizuku.aidl.R: R()
+rikka.shizuku.Shizuku: void addBinderReceivedListener(rikka.shizuku.Shizuku$OnBinderReceivedListener,boolean,android.os.Handler)
+rikka.shizuku.Shizuku: java.lang.String access$302(java.lang.String)
+rikka.shizuku.shared.R: R()
+rikka.shizuku.ShizukuProvider: ShizukuProvider()
+rikka.shizuku.ShizukuRemoteProcess: int exitValue()
+rikka.shizuku.Shizuku: int getLatestServiceVersion()
+rikka.shizuku.SystemServiceHelper: SystemServiceHelper()
+rikka.shizuku.Shizuku: void access$600()
+rikka.shizuku.Shizuku: void updateFlagsForUid(int,int,int)
+androidx.annotation.InspectableProperty$EnumEntry: java.lang.String name()
+androidx.annotation.IntDef: boolean flag()
+rikka.shizuku.ShizukuRemoteProcess: boolean waitForTimeout(long,java.util.concurrent.TimeUnit)
+rikka.shizuku.Shizuku: void onBinderReceived(android.os.IBinder,java.lang.String)
+rikka.shizuku.Shizuku: int getUid()
+moe.shizuku.server.IShizukuServiceConnection$Stub: android.os.IBinder asBinder()
+rikka.shizuku.Shizuku: void unbindUserService(rikka.shizuku.Shizuku$UserServiceArgs,android.content.ServiceConnection,boolean)
+dev.pulseboost.pro.BoostMonitorService: BoostMonitorService()
+rikka.shizuku.ShizukuBinderWrapper: boolean isBinderAlive()
+androidx.annotation.FloatRange: boolean toInclusive()
+dev.pulseboost.pro.MainActivity$Section: dev.pulseboost.pro.MainActivity$Section valueOf(java.lang.String)
+moe.shizuku.server.IShizukuApplication$Stub: moe.shizuku.server.IShizukuApplication asInterface(android.os.IBinder)
+rikka.shizuku.ShizukuRemoteProcess: void destroy()
+rikka.shizuku.Shizuku: boolean lambda$removeBinderDeadListener$2(rikka.shizuku.Shizuku$OnBinderDeadListener,rikka.shizuku.Shizuku$ListenerHolder)
+rikka.shizuku.Shizuku$OnBinderDeadListener: void onBinderDead()
+rikka.shizuku.ShizukuProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])
+androidx.annotation.StringDef: java.lang.String[] value()
+rikka.shizuku.ShizukuProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])
+rikka.shizuku.ShizukuProvider$1: void onReceive(android.content.Context,android.content.Intent)
+rikka.shizuku.ShizukuServiceConnections: ShizukuServiceConnections()
+rikka.shizuku.ShizukuRemoteProcess: int waitFor()
+rikka.shizuku.ShizukuRemoteProcess: void writeToParcel(android.os.Parcel,int)
+androidx.annotation.IntRange: long from()
+androidx.annotation.RequiresApi: int api()
+rikka.shizuku.Shizuku: java.lang.String getSELinuxContext()
+rikka.shizuku.Shizuku: boolean pingBinder()
+androidx.annotation.ChecksSdkIntAtLeast: int api()
+rikka.shizuku.Shizuku: void requestPermission(int)
+rikka.shizuku.ShizukuServiceConnection: ShizukuServiceConnection(rikka.shizuku.Shizuku$UserServiceArgs)
+rikka.shizuku.Shizuku$UserServiceArgs: rikka.shizuku.Shizuku$UserServiceArgs use32BitAppProcess(boolean)
+rikka.shizuku.ShizukuSystemProperties: boolean getBoolean(java.lang.String,boolean)
+moe.shizuku.server.IShizukuApplication$Stub: moe.shizuku.server.IShizukuApplication getDefaultImpl()
+rikka.shizuku.ShizukuServiceConnections: rikka.shizuku.ShizukuServiceConnection get(rikka.shizuku.Shizuku$UserServiceArgs)
+rikka.shizuku.ShizukuBinderWrapper: boolean transact(int,android.os.Parcel,android.os.Parcel,int)
+rikka.shizuku.Shizuku$1: Shizuku$1()
+androidx.annotation.FloatRange: double from()
+rikka.shizuku.Shizuku: boolean attachApplicationV13(android.os.IBinder,java.lang.String)
+rikka.shizuku.Shizuku: moe.shizuku.server.IShizukuService requireService()
+androidx.annotation.GuardedBy: java.lang.String value()
+rikka.shizuku.ShizukuApiConstants: ShizukuApiConstants()
+moe.shizuku.server.IShizukuServiceConnection$Stub: moe.shizuku.server.IShizukuServiceConnection asInterface(android.os.IBinder)
+rikka.shizuku.ShizukuRemoteProcess$1: ShizukuRemoteProcess$1()
+rikka.shizuku.ShizukuBinderWrapper: boolean unlinkToDeath(android.os.IBinder$DeathRecipient,int)
+rikka.shizuku.Shizuku: boolean shouldShowRequestPermissionRationale()
+rikka.shizuku.ShizukuServiceConnection: void clearConnections()
+rikka.shizuku.ShizukuRemoteProcess: java.io.OutputStream getOutputStream()
+rikka.shizuku.ShizukuProvider: void enableMultiProcessSupport(boolean)
+rikka.shizuku.Shizuku: void transactRemote(android.os.Parcel,android.os.Parcel,int)
+rikka.shizuku.ShizukuProvider: java.lang.String getType(android.net.Uri)
+androidx.annotation.ChecksSdkIntAtLeast: java.lang.String codename()
+dev.pulseboost.pro.MainActivity: MainActivity()
+dev.pulseboost.pro.BuildConfig: BuildConfig()
+androidx.annotation.IntDef: int[] value()
+rikka.shizuku.Shizuku: void addBinderReceivedListener(rikka.shizuku.Shizuku$OnBinderReceivedListener,android.os.Handler)
+rikka.shizuku.ShizukuProvider: void handleSendBinder(android.os.Bundle)
+dev.pulseboost.pro.BoostOverlayService: BoostOverlayService()
+rikka.shizuku.ShizukuProvider: android.os.Bundle call(java.lang.String,java.lang.String,android.os.Bundle)
+rikka.shizuku.ShizukuProvider: void requestBinderForNonProviderProcess(android.content.Context)
+androidx.annotation.FloatRange: double to()
+rikka.shizuku.ShizukuSystemProperties: ShizukuSystemProperties()
+rikka.shizuku.Shizuku: void addBinderReceivedListener(rikka.shizuku.Shizuku$OnBinderReceivedListener)
+rikka.shizuku.Shizuku$UserServiceArgs: android.os.Bundle access$1200(rikka.shizuku.Shizuku$UserServiceArgs,boolean)
+rikka.shizuku.Shizuku: void scheduleBinderDeadListeners()
+androidx.annotation.RestrictTo$Scope: RestrictTo$Scope(java.lang.String,int)

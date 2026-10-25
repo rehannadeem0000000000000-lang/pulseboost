@@ -1,0 +1,155 @@
+# The proguard configuration file for the following section is /home/user/sandbox/android-app/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.5.2
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
+# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
+# will be ignored by new version of the Android plugin for Gradle.
+
+# Optimizations: If you don't want to optimize, use the proguard-android.txt configuration file
+# instead of this one, which turns off the optimization flags.
+-allowaccessmodification
+
+# Preserve some attributes that may be required for reflection.
+-keepattributes AnnotationDefault,
+                EnclosingMethod,
+                InnerClasses,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations,
+                Signature
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class com.google.android.vending.licensing.ILicensingService
+-dontnote com.android.vending.licensing.ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+-dontnote com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# The support libraries contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontnote android.support.**
+-dontnote androidx.**
+-dontwarn android.support.**
+-dontwarn androidx.**
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+
+# These classes are duplicated between android.jar and core-lambda-stubs.jar.
+-dontnote java.lang.invoke.**
+
+# End of content from /home/user/sandbox/android-app/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.5.2
+# The proguard configuration file for the following section is /home/user/sandbox/android-app/app/proguard-rules.pro
+# Shizuku API and its AIDL-generated binder classes must survive R8.
+-keep class rikka.shizuku.** { *; }
+-keep interface rikka.shizuku.** { *; }
+-dontwarn rikka.shizuku.**
+-dontwarn moe.shizuku.**
+
+# Keep reflection metadata intact for the hidden-API bridges Shizuku uses.
+-keepattributes *Annotation*, InnerClasses, EnclosingMethod, Signature, Exceptions
+
+-keep class dev.pulseboost.pro.BuildConfig { *; }
+
+# AIDL parcelables referenced by the Shizuku server bridge.
+-keep class androidx.annotation.** { *; }
+-dontwarn androidx.annotation.**
+
+# End of content from /home/user/sandbox/android-app/app/proguard-rules.pro
+# The proguard configuration file for the following section is /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/proguard.txt
+-keepnames class moe.shizuku.api.BinderContainer
+-keepclassmembers class moe.shizuku.api.BinderContainer {
+   public static final android.os.Parcelable$Creator CREATOR;
+}
+# End of content from /home/user/.gradle/caches/8.9/transforms/c0abf5b06eb2c3046715a507e68b759a/transformed/provider-13.1.5/proguard.txt
+# The proguard configuration file for the following section is /home/user/.gradle/caches/8.9/transforms/a334694976e14554b70a09a656c8316c/transformed/api-13.1.5/proguard.txt
+
+# End of content from /home/user/.gradle/caches/8.9/transforms/a334694976e14554b70a09a656c8316c/transformed/api-13.1.5/proguard.txt
+# The proguard configuration file for the following section is /home/user/.gradle/caches/8.9/transforms/72321ceec2ff2747a6c1b0c7b6156d23/transformed/shared-13.1.5/proguard.txt
+
+# End of content from /home/user/.gradle/caches/8.9/transforms/72321ceec2ff2747a6c1b0c7b6156d23/transformed/shared-13.1.5/proguard.txt
+# The proguard configuration file for the following section is /home/user/.gradle/caches/8.9/transforms/1cdcd19345190a2b00fc8056085481de/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+-keep,allowobfuscation @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+-keepclassmembers,allowobfuscation class * {
+  @androidx.annotation.DoNotInline <methods>;
+}
+
+# End of content from /home/user/.gradle/caches/8.9/transforms/1cdcd19345190a2b00fc8056085481de/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /home/user/.gradle/caches/8.9/transforms/d2d2315f34bd407bfcc2143a6de6bbe7/transformed/aidl-13.1.5/proguard.txt
+
+# End of content from /home/user/.gradle/caches/8.9/transforms/d2d2315f34bd407bfcc2143a6de6bbe7/transformed/aidl-13.1.5/proguard.txt
+# The proguard configuration file for the following section is /home/user/sandbox/android-app/app/build/intermediates/aapt_proguard_file/release/processReleaseResources/aapt_rules.txt
+-keep class dev.pulseboost.pro.BoostMonitorService { <init>(); }
+-keep class dev.pulseboost.pro.BoostOverlayService { <init>(); }
+-keep class dev.pulseboost.pro.BoostWidgetProvider { <init>(); }
+-keep class dev.pulseboost.pro.MainActivity { <init>(); }
+
+# End of content from /home/user/sandbox/android-app/app/build/intermediates/aapt_proguard_file/release/processReleaseResources/aapt_rules.txt
+# The proguard configuration file for the following section is <unknown>
+
+# End of content from <unknown>

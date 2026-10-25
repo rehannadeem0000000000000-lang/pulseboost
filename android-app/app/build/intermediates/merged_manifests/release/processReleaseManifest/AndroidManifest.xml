@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.pulseboost.pro"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <!-- Overlay window for the FPS meter -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Foreground services (overlay + launch monitor) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <!-- Status notifications for the foreground services -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Needed to enumerate installed launcher apps on Android 11+ -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <!-- UsageStats-based foreground app detection for per-app boost profiles -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <!-- Allow user to exempt the monitor service from Doze -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Declared for Settings writes the user may grant via ADB/Shizuku -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Shizuku API permission -->
+    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+
+    <application
+        android:allowBackup="false"
+        android:extractNativeLibs="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PulseBoost" >
+        <activity
+            android:name="dev.pulseboost.pro.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FPS overlay: real Choreographer measurements over any app -->
+        <service
+            android:name="dev.pulseboost.pro.BoostOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" >
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Draws a real-time FPS / foreground-package overlay measured with Choreographer while gaming." />
+        </service>
+
+        <!-- Watches UsageStats and fires per-app boost profiles -->
+        <service
+            android:name="dev.pulseboost.pro.BoostMonitorService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" >
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Detects when a profile-enabled game enters the foreground and runs the user&apos;s Shizuku boost actions." />
+        </service>
+
+        <!-- Home screen widget: live free RAM + one-tap boost -->
+        <receiver
+            android:name="dev.pulseboost.pro.BoostWidgetProvider"
+            android:exported="false"
+            android:label="@string/widget_label" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="dev.pulseboost.pro.widget.REFRESH" />
+                <action android:name="dev.pulseboost.pro.widget.BOOST" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/boost_widget_info" />
+        </receiver>
+
+        <meta-data
+            android:name="moe.shizuku.client.V3_SUPPORT"
+            android:value="true" />
+    </application>
+
+</manifest>

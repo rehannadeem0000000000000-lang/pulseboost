@@ -1,0 +1,13 @@
+/home/user/sandbox/android-app/app/src/main/java/dev/pulseboost/pro/GameModeHelper.kt:89: Error: Reflective access to setGameMode is forbidden when targeting API 34 and above [BlockedPrivateApi]
+            val method = GameManager::class.java.getDeclaredMethod(
+                         ^
+
+   Explanation for issues of type "BlockedPrivateApi":
+   Usage of restricted non-SDK interface is forbidden for this targetSDK.
+   Accessing non-SDK methods or fields through reflection has a high
+   likelihood to break your app between versions, and is being restricted to
+   facilitate future app compatibility.
+
+   https://developer.android.com/preview/restrictions-non-sdk-interfaces
+
+1 errors, 0 warnings

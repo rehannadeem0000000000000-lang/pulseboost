@@ -1,0 +1,4 @@
+-keep class dev.pulseboost.pro.BoostMonitorService { <init>(); }
+-keep class dev.pulseboost.pro.BoostOverlayService { <init>(); }
+-keep class dev.pulseboost.pro.BoostWidgetProvider { <init>(); }
+-keep class dev.pulseboost.pro.MainActivity { <init>(); }

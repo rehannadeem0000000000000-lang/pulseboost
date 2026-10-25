@@ -1,0 +1,8 @@
+dev.pulseboost.pro.app-pngs-0 /home/user/sandbox/android-app/app/build/generated/res/pngs/release
+dev.pulseboost.pro.app-resValues-1 /home/user/sandbox/android-app/app/build/generated/res/resValues/release
+dev.pulseboost.pro.app-packageReleaseResources-2 /home/user/sandbox/android-app/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+dev.pulseboost.pro.app-packageReleaseResources-3 /home/user/sandbox/android-app/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+dev.pulseboost.pro.app-merged-not-compiled-resources-4 /home/user/sandbox/android-app/app/build/intermediates/merged-not-compiled-resources/release
+dev.pulseboost.pro.app-release-5 /home/user/sandbox/android-app/app/build/intermediates/merged_res/release/mergeReleaseResources
+dev.pulseboost.pro.app-main-6 /home/user/sandbox/android-app/app/src/main/res
+dev.pulseboost.pro.app-release-7 /home/user/sandbox/android-app/app/src/release/res

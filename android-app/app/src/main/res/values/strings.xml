@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PulseBoost Pro</string>
+    <string name="app_name_caps">PULSEBOOST PRO</string>
+    <string name="app_tagline">shizuku-powered system booster</string>
+    <string name="widget_label">PulseBoost RAM + Boost</string>
+    <string name="widget_boost">BOOST</string>
+    <string name="close_overlay">Dismiss overlay</string>
+</resources>

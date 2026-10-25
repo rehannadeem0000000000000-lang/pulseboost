@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'dev.pulseboost.pro'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "dev.pulseboost.pro"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+
+        vectorDrawables { useSupportLibrary false }
+    }
+
+    signingConfigs {
+        release {
+            // The CI workflow (.github/workflows/build-apk.yml) generates this
+            // keystore (or decodes secrets.RELEASE_KEYSTORE_BASE64) before
+            // invoking Gradle, so assembleRelease always emits a signed APK.
+            storeFile file(System.getenv("PULSEBOOST_KEYSTORE") ?: "${rootDir}/release.keystore")
+            storePassword System.getenv("PULSEBOOST_STORE_PASS") ?: "pulseboost"
+            keyAlias System.getenv("PULSEBOOST_KEY_ALIAS") ?: "pulseboost"
+            keyPassword System.getenv("PULSEBOOST_KEY_PASS") ?: "pulseboost"
+            // v2 for the platform verifier, v1 so classic META-INF JAR
+            // signature entries are present and inspectable as well.
+            enableV1Signing true
+            enableV2Signing true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "pulseboost-pro-${variant.versionName}.apk"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Shizuku SDK: privileged binder bridge used by EVERY boost action in the app.
+    implementation("dev.rikka.shizuku:api:13.1.5")
+    implementation("dev.rikka.shizuku:provider:13.1.5")
+}
