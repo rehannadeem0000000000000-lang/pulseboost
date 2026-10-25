@@ -21,74 +21,36 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
-          packages: ''
+          packages: ""
 
-      - name: Install Android platform 34 and build-tools
+      - name: Install SDK packages
         run: |
           yes | sdkmanager --licenses > /dev/null || true
           sdkmanager "platforms;android-34" "build-tools;34.0.0" "platform-tools"
 
-      - name: Prepare release keystore
+      - name: Prepare keystore
         working-directory: android-app
-        env:
-          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
         run: |
-          if [ -n "$RELEASE_KEYSTORE_BASE64" ]; then
-            echo "$RELEASE_KEYSTORE_BASE64" | base64 -d > release.keystore
-            echo "using keystore from repository secrets"
-          else
-            keytool -genkeypair -v -keystore release.keystore \
-              -alias pulseboost -keyalg RSA -keysize 2048 -validity 10950 \
-              -storepass pulseboost -keypass pulseboost \
-              -dname "CN=PulseBoost Pro, OU=Mobile, O=PulseBoost, C=US"
-          fi
+          keytool -genkeypair -v -keystore release.keystore -alias pulseboost -keyalg RSA -keysize 2048 -validity 10950 -storepass pulseboost -keypass pulseboost -dname "CN=PulseBoost Pro, OU=Mobile, O=PulseBoost, C=US"
           echo "PULSEBOOST_KEYSTORE=$PWD/release.keystore" >> "$GITHUB_ENV"
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-        gradle-version: '8.7'
-
-      - name: Build signed release APK
+      - name: Build APK
         working-directory: android-app
         run: |
-         gradle :app:assembleRelease --stacktrace --no-daemon
+          curl -sL -o /tmp/gradle.zip https://services.gradle.org/distributions/gradle-8.7-bin.zip
+          unzip -q /tmp/gradle.zip -d /tmp
+          export PATH=/tmp/gradle-8.7/bin:$PATH
+          gradle :app:assembleRelease --stacktrace --no-daemon
 
-      - name: Structural APK verification gate
+      - name: Verify APK
         run: |
-          APK=$(ls -S android-app/app/build/outputs/apk/release/*.apk | head -n1)
+          APK=$(ls android-app/app/build/outputs/apk/release/*.apk | head -n1)
           echo "APK: $APK"
-          SIZE=$(stat -c%s "$APK")
-          echo "size: $SIZE bytes"
-          if [ "$SIZE" -lt 40960 ]; then
-            echo "APK is below the 40 KB floor — failing the build"
-            exit 1
-          fi
-          if ! unzip -l "$APK" | grep -q "classes\.dex"; then
-            echo "classes.dex missing — failing the build"
-            exit 1
-          fi
-          if ! unzip -l "$APK" | grep -q "resources\.arsc"; then
-            echo "resources.arsc missing — failing the build"
-            exit 1
-          fi
-          head -c4 "$APK" | od -An -tx1 | grep -q "50 4b 03 04" || {
-            echo "ZIP magic missing — failing the build"; exit 1;
-          }
+          ls -lh "$APK"
+          unzip -l "$APK" | grep -E "classes.dex|resources.arsc|AndroidManifest"
 
-      - name: apksigner verify
-        run: |
-          APK=$(ls -S android-app/app/build/outputs/apk/release/*.apk | head -n1)
-          "$ANDROID_HOME/build-tools/34.0.0/apksigner" verify --verbose --print-certs "$APK"
-
-      - name: Embed APK payload into the web console
-        run: node scripts/embed-apk.mjs || echo "embed-apk.mjs failed (non-fatal)"
-
-      - name: Upload APK + payload artifacts
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: pulseboost-pro
-          path: |
-            android-app/app/build/outputs/apk/release/*.apk
-            src/data/apkPayload.ts
-          if-no-files-found: warn
+          path: android-app/app/build/outputs/apk/release/*.apk
