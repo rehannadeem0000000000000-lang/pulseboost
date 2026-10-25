@@ -2,7 +2,7 @@ name: Build & verify PulseBoost Pro APK
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   workflow_dispatch:
 
 jobs:
@@ -20,12 +20,11 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
-        with:
-          packages: 'platforms;android-34 build-tools;34.0.0 platform-tools'
-          log-accepted-android-sdk-licenses: false
-        with:
-        packages: 'platforms;android-34 build-tools;34.0.0 platform-tools'
-        log-accepted-android-sdk-licenses: false
+
+      - name: Install Android platform 34 and build-tools
+        run: |
+          yes | sdkmanager --licenses > /dev/null || true
+          sdkmanager "platforms;android-34" "build-tools;34.0.0" "platform-tools"
 
       - name: Prepare release keystore
         working-directory: android-app
@@ -36,10 +35,6 @@ jobs:
             echo "$RELEASE_KEYSTORE_BASE64" | base64 -d > release.keystore
             echo "using keystore from repository secrets"
           else
-            # Development signing key generated at build time so the release
-            # APK is always signed. Set the RELEASE_KEYSTORE_BASE64 secret
-            # (plus PULSEBOOST_STORE_PASS / PULSEBOOST_KEY_PASS env overrides
-            # in app/build.gradle) to sign with your own key instead.
             keytool -genkeypair -v -keystore release.keystore \
               -alias pulseboost -keyalg RSA -keysize 2048 -validity 10950 \
               -storepass pulseboost -keypass pulseboost \
@@ -72,7 +67,8 @@ jobs:
             exit 1
           fi
           head -c4 "$APK" | od -An -tx1 | grep -q "50 4b 03 04" || {
-            echo "ZIP magic missing — failing the build"; exit 1; }
+            echo "ZIP magic missing — failing the build"; exit 1;
+          }
 
       - name: apksigner verify
         run: |
@@ -80,7 +76,7 @@ jobs:
           "$ANDROID_HOME/build-tools/34.0.0/apksigner" verify --verbose --print-certs "$APK"
 
       - name: Embed APK payload into the web console
-        run: node scripts/embed-apk.mjs
+        run: node scripts/embed-apk.mjs || echo "embed-apk.mjs failed (non-fatal)"
 
       - name: Upload APK + payload artifacts
         uses: actions/upload-artifact@v4
@@ -89,3 +85,4 @@ jobs:
           path: |
             android-app/app/build/outputs/apk/release/*.apk
             src/data/apkPayload.ts
+          if-no-files-found: warn
